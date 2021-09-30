@@ -1,0 +1,45 @@
+.project {
+  /* border: 1px solid red; */
+  padding-block-start: 40px;
+  padding-block-end: 40px;
+}
+
+.project-img {
+  text-align: center;
+}
+
+.project-img img {
+  max-inline-size: 100%;
+}
+
+/* .matrix {
+  max-width: 70%;
+} */
+
+.project-description {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+
+@media screen and (min-width: 768px) {
+  .project {
+    display: flex;
+    align-items: center; /*para que se centre con respecto al tamaño de la imagen*/
+    gap: 32px;
+    padding-block-start: 80px;
+    padding-block-end: 80px;
+  }
+
+  .project-description {
+    flex: 1;
+  }
+
+  .project:nth-child(odd) .project-img {
+    /* border: 10px solid red; */
+    order: 2;
+    flex: 1;
+    text-align: center;
+  }
+}
